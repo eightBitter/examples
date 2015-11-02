@@ -81,7 +81,7 @@
 
     <p><strong>URI:</strong> <a href="http://jacobshelby.org/examples/linkedData/catalog_001">http://jacobshelby.org/examples/linkedData/catalog_001</a><br/>
       <strong>Visual graph:</strong> <a href="http://en.lodlive.it?http://jacobshelby.org/examples/linkedData/catalog_001">link</a><br/>
-      <strong>Code:</strong> github link</p>
+      <strong>Code:</strong> <a href="https://github.com/eightBitter/examples/tree/master/linkedData">GitHub</a></p>
 
     <ul>
       <li><strong>Title</strong></li>
