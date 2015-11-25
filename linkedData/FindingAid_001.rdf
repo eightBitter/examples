@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- adaptation of http://lccn.loc.gov/07017953 -->
+
+<rdf:RDF xml:base="http://jacobshelby.org/examples/linkedData/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:bibframe="http://bibfra.me/vocab/lite/"
+>
+  <rdf:Description rdf:about="FindingAid_001">
+    <rdf:type rdf:resource="bibframe:FindingAid"/>
+    <dcterms:creator rdf:resource="http://jacobshelby.org/#me"/>
+    <dcterms:language rdf:resource="http://lexvo.org/id/iso639-3/eng"/>
+    <bibframe:describes rdf:resource="Collection_001"/>
+    <bibframe:describes rdf:resource="Series_001"/>
+    <bibframe:describes rdf:resource="Series_002"/>
+    <bibframe:describes rdf:resource="Box_001"/>
+    <bibframe:describes rdf:resource="Box_002"/>
+    <bibframe:describes rdf:resource="Item_001"/>
+    <bibframe:describes rdf:resource="Item_002"/>
+    <bibframe:describes rdf:resource="Item_003"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Collection_001">
+    <rdf:type rdf:resource="bibframe:Collection"/>
+    <dcterms:title>A title for the collection</dcterms:title>
+    <dcterms:date>1955 - 1978</dcterms:date>
+    <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+    <dcterms:hasPart rdf:resource="Series_001"/>
+    <dcterms:hasPart rdf:resource="Series_002"/>
+    <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Series_001">
+    <rdf:type rdf:resource="bibframe:Series"/>
+    <dcterms:date>1955 - 1967</dcterms:date>
+    <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+    <dcterms:isPartOf rdf:resource="Collection_001"/>
+    <dcterms:hasPart rdf:resource="Box_001"/>
+    <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Series_002">
+    <rdf:type rdf:resource="bibframe:Series"/>
+    <dcterms:date>1968 - 1978</dcterms:date>
+    <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+    <dcterms:isPartOf rdf:resource="Collection_001"/>
+    <dcterms:hasPart rdf:resource="Box_002"/>
+    <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Box_001">
+    <rdf:type rdf:resource="bibframe:Box"/>
+    <dcterms:date>1955 - 1957</dcterms:date>
+    <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+    <dcterms:isPartOf rdf:resource="Series_001"/>
+    <dcterms:hasPart rdf:resource="Item_001"/>
+    <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Box_002">
+    <rdf:type rdf:resource="bibframe:Box"/>
+    <dcterms:date>1968 - 1972</dcterms:date>
+    <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+    <dcterms:isPartOf rdf:resource="Series_002"/>
+    <dcterms:hasPart rdf:resource="Item_002"/>
+    <dcterms:hasPart rdf:resource="Item_003"/>
+    <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Item_001">
+    <rdf:type rdf:resource="bibframe:Item"/>
+    <dcterms:date>1955</dcterms:date>
+    <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+    <dcterms:isPartOf rdf:resource="Box_001"/>
+    <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Item_002">
+    <rdf:type rdf:resource="bibframe:Item"/>
+    <dcterms:date>1968</dcterms:date>
+    <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+    <dcterms:isPartOf rdf:resource="Box_002"/>
+    <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Item_003">
+    <rdf:type rdf:resource="bibframe:Item"/>
+    <dcterms:date>1971</dcterms:date>
+    <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+    <dcterms:isPartOf rdf:resource="Box_002"/>
+    <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  </rdf:Description>
+
+</rdf:RDF>

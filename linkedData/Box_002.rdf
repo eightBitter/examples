@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF xml:base="http://jacobshelby.org/examples/linkedData/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:bibframe="http://bibfra.me/vocab/lite/"
+>
+<rdf:Description rdf:about="Box_002">
+  <rdf:type rdf:resource="bibframe:Box"/>
+  <dcterms:date>1968 - 1972</dcterms:date>
+  <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
+  <dcterms:isPartOf rdf:resource="Series_002"/>
+  <dcterms:hasPart rdf:resource="Item_002"/>
+  <dcterms:hasPart rdf:resource="Item_003"/>
+  <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+</rdf:Description>
+
+</rdf:RDF>
