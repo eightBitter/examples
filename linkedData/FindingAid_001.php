@@ -76,9 +76,9 @@
 
 <main>
   <h1>Finding Aid for Collection 001</h1>
-  <p><strong>URI:</strong> <a href="http://jacobshelby.org/examples/linkedData/catalog_001">http://jacobshelby.org/examples/linkedData/FindingAid_001</a><br/>
+  <p><strong>URI:</strong> <a href="http://jacobshelby.org/examples/linkedData/FindingAid_001">http://jacobshelby.org/examples/linkedData/FindingAid_001</a><br/>
     <strong>Visual graph:</strong> <a href="http://en.lodlive.it?http://jacobshelby.org/examples/linkedData/FindingAid_001">link</a><br/>
-    <strong>Code:</strong> <a href="https://github.com/eightBitter/examples/tree/master/linkedData/FindingAid_001.rdf">GitHub</a></p>
+    <strong>Code:</strong> <a href="https://github.com/eightBitter/examples/tree/master/linkedData/">GitHub</a></p>
   <section class="content-box">
 
     <h2>
