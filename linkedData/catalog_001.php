@@ -19,7 +19,7 @@
      * @license    http://unlicense.org/
      */
 
-    set_include_path(get_include_path() . PATH_SEPARATOR . '../../easyrdf-0.9.0/lib/');
+    set_include_path(get_include_path() . PATH_SEPARATOR . '../../easyrdf/lib/');
     require_once "EasyRdf.php";
 ?>
 
@@ -239,7 +239,7 @@
 				$('html').addClass($.fn.details.support ? 'details' : 'no-details');
 
 				// Show a message based on support
-				$('body').prepend($.fn.details.support ? 'Native support detected; the plugin will only add ARIA annotations and fire custom open/close events.' : 'Emulation active; you are watching the plugin in action!');
+				// $('body').prepend($.fn.details.support ? 'Native support detected; the plugin will only add ARIA annotations and fire custom open/close events.' : 'Emulation active; you are watching the plugin in action!');
 
 				// Emulate <details> where necessary and enable open/close event handlers
 				$('details').details();

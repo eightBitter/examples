@@ -4,15 +4,16 @@
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-  xmlns:bibframe="http://bibfra.me/vocab/lite/"
+  xmlns:bibframe="http://bibfra.me/vocab/"
+  xmlns:example="http://example.com/"
 >
 <rdf:Description rdf:about="Series_001">
-  <rdf:type rdf:resource="bibframe:Series"/>
+  <rdf:type rdf:resource="example:Series"/>
   <dcterms:date>1955 - 1967</dcterms:date>
   <dcterms:creator rdf:resource="http://example.com/Person/notarealurl"/>
   <dcterms:isPartOf rdf:resource="Collection_001"/>
   <dcterms:hasPart rdf:resource="Box_001"/>
-  <bibframe:isDescribedBy rdf:resource="FindingAid_001"/>
+  <bibframe:findingAid rdf:resource="FindingAid_001"/>
 </rdf:Description>
 
 </rdf:RDF>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Linked Data Examples | Finding Aid 001</title>
+    <title>Linked Data Examples | Catalog 001</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,9 +60,10 @@
         EasyRdf_Namespace::set('schema', 'http://schema.org/');
 
         ##Create preliminary resources
-        $graph = EasyRdf_Graph::newAndLoad('http://jacobshelby.org/examples/linkedData/FindingAid_001.rdf');
+        $graph = EasyRdf_Graph::newAndLoad('http://jacobshelby.org/examples/linkedData/Collection_001.rdf');
         $base = 'http://jacobshelby.org/examples/linkedData/';
         // ____ = $graph->resource($base.'____');
+        $collection = $graph->resource('http://jacobshelby.org/examples/linkedData/Collect_001')
 
 
 
@@ -79,10 +80,10 @@
 
 
 <main>
-  <h1>Linked data finding aid example</h1>
+  <h1>Linked data catalog example</h1>
   <section class="content-box">
     <!-- metadata about the "resouce", in this case, the original book "Moby Dick, or, the Whale"-->
-    <h2>Finding aid 001</h2>
+    <h2>Catalog record 001</h2>
 
   <?php
     $dump = $graph->dump('html');

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- adaptation of http://lccn.loc.gov/07017953 -->
+
+<rdf:RDF xml:base="http://jacobshelby.org/examples/linkedData/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:bibframe="http://bibframe.org/vocab/"
+>
+  <rdf:Description rdf:about="catalog_001">
+    <dcterms:title>Moby-Dick, or, the Whale</dcterms:title>
+    <dcterms:creator rdf:resource="http://id.loc.gov/authorities/names/n79006936"/>
+    <dcterms:type rdf:resource="http://purl.org/dc/dcmitype/Text"/>
+    <dcterms:publisher>Harper &amp; Brothers</dcterms:publisher>
+    <bibframe:providerPlace rdf:resource="http://sws.geonames.org/5128581/"/>
+    <dcterms:date>1851</dcterms:date>
+    <dcterms:language rdf:resource="http://lexvo.org/id/iso639-3/eng"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2007100918"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008113462"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008111148"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008113463"/>
+    <dcterms:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008113464"/>
+    <dcterms:isReferencedBy rdf:resource="http://jacobshelby.org/examples/linkedData/catalog_001.rdf"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="catalog_001.rdf">
+    <dcterms:creator rdf:resource="http://jacobshelby.org/me"/>
+    <dcterms:isVersionOf rdf:resource="http://lccn.loc.gov/07017953"/>
+    <dcterms:description>This record is an adapation of http://lccn.loc.gov/07017953. It is meant as a proof-of-concept and not as a stable/permanent resource. Link to this resource at your own peril!</dcterms:description>
+  </rdf:Description>
+</rdf:RDF>
